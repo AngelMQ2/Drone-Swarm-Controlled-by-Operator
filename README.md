@@ -1,6 +1,6 @@
 # Drone-Swarm-Controlled-by-Operator
 
-This repository contains the implementation of the algorithms developed for the paper "Drone Swarm Controlled by Operator." The project demonstrates controlling a swarm of drones through a leader-follower strategy based on the Consensus Theory, where one drone (the leader) is manually controlled by an operator, and the other drones (followers) adjust their behavior based on the leader's movements. The algorithms enable the swarm to exhibit three main behaviors: aggregation, shape formation, and agent queuing. 
+This repository contains the implementation of the algorithms developed for the paper "Drone Swarm Controlled by Operator." The project demonstrates controlling a swarm of drones through a leader-follower strategy based on Consensus Theory, where one drone (the leader) is manually controlled by an operator, and the other drones (followers) adjust their behavior based on the leader's movements. The algorithms enable the swarm to exhibit three main behaviors: aggregation, shape formation, and agent queuing.
 
 ## Repository Structure
 * 2D Env: Includes the Python scripts for simulating drone swarm behaviors in a simplified 2D environment.
@@ -29,4 +29,15 @@ Key Features:
 * Each drone follows its immediate predecessor, maintaining a set distance.
 * This hierarchical structure allows the swarm to navigate complex paths, closely following the leader.
 
-
+## Usage
+### Python Models
+1. Run the 'Consensus_Swarm.py' script. Modify the parameters if needed.
+2. The user can interact with the swarm:
+    * Keyboard arrows (up: forward movement, down: aggregation, right: shape formation, left: queuing).
+    * Mouse: Right and left click to rotate the swarm in Shape Formation. Mouse wheel to control the distance between agents in Shape Formation and Queuing.
+### Simulink
+1. Open the 'Consensus_Swarm.slx' file in MATLAB Simulink.
+2. The user can interact with the swarm using a PS3 controller:
+    * Joystick: Leader drone altitude, yaw, pitch, and roll.
+    * Right and Left Trigger: Adjust the distance between agents and swarm rotation parameters.
+    * Buttons: (cross: aggregation, circle: shape formation, square: queuing).
