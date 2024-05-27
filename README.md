@@ -36,8 +36,9 @@ Key Features:
     * Keyboard arrows (up: forward movement, down: aggregation, right: shape formation, left: queuing).
     * Mouse: Right and left click to rotate the swarm in Shape Formation. Mouse wheel to control the distance between agents in Shape Formation and Queuing.
 ### Simulink
-1. Open the 'Consensus_Swarm.slx' file in MATLAB Simulink.
-2. The user can interact with the swarm using a PS3 controller:
+1. Run the file 'Parameters.m'.
+2. Open the 'Consensus_Swarm.slx' file in MATLAB Simulink.
+3. The user can interact with the swarm using a PS3 controller:
     * Joystick: Leader drone altitude, yaw, pitch, and roll.
     * Right and Left Trigger: Adjust the distance between agents and swarm rotation parameters.
     * Buttons: (cross: aggregation, circle: shape formation, square: queuing).
