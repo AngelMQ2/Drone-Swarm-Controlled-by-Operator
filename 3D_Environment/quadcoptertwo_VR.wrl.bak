@@ -1,0 +1,232 @@
+#VRML V2.0 utf8
+
+# Copyright 2015-2018 The MathWorks, Inc.
+DEF Trajectory Transform {
+  children Inline {
+    url "asbQuadcopterTrajectory.wrl" 
+  }
+}
+DEF AHMap Transform {
+  translation 50.67 -0.1 62.48
+  rotation 0 1 0 -1.57
+  children Group {
+    children Inline {
+      url "asbQuadcopterAHBase.wrl" 
+    }
+  }
+}
+DEF QuadBody1 Transform {
+  translation 57 0.001765 95
+  scaleOrientation 0 1 0 0
+  scale 4 4 4
+  children [
+    DEF Airframe Transform {
+      scaleOrientation 1 0 0 0
+      rotation 0 1 0 0
+      children Inline {
+        url "asbQuadcopterBody.wrl" 
+      }
+    }
+    DEF Blade1 Transform {
+      translation 0.0425 0.015 -0.0425
+      children Inline {
+        url "asbQuadcopterBladeCW.wrl" 
+      }
+    }
+    DEF Blade3 Transform {
+      translation -0.0425 0.015 0.0425
+      children Inline {
+        url "asbQuadcopterBladeCW.wrl" 
+      }
+    }
+    DEF Blade2 Transform {
+      translation -0.0425 0.015 -0.0425
+      children Inline {
+        url "asbQuadcopterBladeCCW.wrl" 
+      }
+    }
+    DEF Blade4 Transform {
+      translation 0.0425 0.015 0.0425
+      children Inline {
+        url "asbQuadcopterBladeCCW.wrl" 
+      }
+    }
+    DEF Camera Viewpoint {
+      description "Quadcopter Camera"
+      position 0 -4 0
+      orientation 1 0 0 -1.57
+    }
+    DEF OnQuad Viewpoint {
+      description "Chase"
+      position -1 0.25 0
+      orientation 0 1 0 -1.57
+    }
+  ]
+}
+DEF IsoNoRotation Viewpoint {
+  description "Isometric - No Rotation"
+  position 57.9009 0.670747 95.99
+  orientation -0.46727 0.858698 0.210466 0.847752
+}
+DEF OnQuadNoRotation Viewpoint {
+  description "Chase - No Rotation"
+  position 53 1.00177 95
+  orientation 0 -1 -0 1.57
+}
+DEF LandingMarker Transform {
+  translation 57 0.02 97
+  children Shape {
+    appearance Appearance {
+      material Material {
+        diffuseColor 1 0 0
+      }
+    }
+    geometry Box {
+      size 0.3 0.1 0.3
+    }
+  }
+}
+DEF QuadBody2 Transform {
+  translation 57 0.001765 95
+  scaleOrientation 0 1 0 0
+  scale 4 4 4
+  children [
+    DEF Airframe_0001 Transform {
+      scaleOrientation 1 0 0 0
+      rotation 0 1 0 0
+      children Inline {
+        url "asbQuadcopterBody.wrl" 
+      }
+    }
+    DEF Blade1_0001 Transform {
+      translation 0.0425 0.015 -0.0425
+      children Inline {
+        url "asbQuadcopterBladeCW.wrl" 
+      }
+    }
+    DEF Blade3_0001 Transform {
+      translation -0.0425 0.015 0.0425
+      children Inline {
+        url "asbQuadcopterBladeCW.wrl" 
+      }
+    }
+    DEF Blade2_0001 Transform {
+      translation -0.0425 0.015 -0.0425
+      children Inline {
+        url "asbQuadcopterBladeCCW.wrl" 
+      }
+    }
+    DEF Blade4_0001 Transform {
+      translation 0.0425 0.015 0.0425
+      children Inline {
+        url "asbQuadcopterBladeCCW.wrl" 
+      }
+    }
+    DEF Camera_0001 Viewpoint {
+      description "Quadcopter Camera"
+      position 0 -4 0
+      orientation 1 0 0 -1.57
+    }
+    DEF OnQuad_0001 Viewpoint {
+      description "Chase"
+      position -1 0.25 0
+      orientation 0 1 0 -1.57
+    }
+  ]
+}
+DEF QuadBody3 Transform {
+  translation 57 0.001765 95
+  scaleOrientation 0 1 0 0
+  scale 4 4 4
+  children [
+    DEF Airframe_0002 Transform {
+      scaleOrientation 1 0 0 0
+      rotation 0 1 0 0
+      children Inline {
+        url "asbQuadcopterBody.wrl" 
+      }
+    }
+    DEF Blade1_0002 Transform {
+      translation 0.0425 0.015 -0.0425
+      children Inline {
+        url "asbQuadcopterBladeCW.wrl" 
+      }
+    }
+    DEF Blade3_0002 Transform {
+      translation -0.0425 0.015 0.0425
+      children Inline {
+        url "asbQuadcopterBladeCW.wrl" 
+      }
+    }
+    DEF Blade2_0002 Transform {
+      translation -0.0425 0.015 -0.0425
+      children Inline {
+        url "asbQuadcopterBladeCCW.wrl" 
+      }
+    }
+    DEF Blade4_0002 Transform {
+      translation 0.0425 0.015 0.0425
+      children Inline {
+        url "asbQuadcopterBladeCCW.wrl" 
+      }
+    }
+    DEF Camera_0002 Viewpoint {
+      description "Quadcopter Camera"
+      position 0 -4 0
+      orientation 1 0 0 -1.57
+    }
+    DEF OnQuad_0002 Viewpoint {
+      description "Chase"
+      position -1 0.25 0
+      orientation 0 1 0 -1.57
+    }
+  ]
+}
+DEF QuadBody4 Transform {
+  translation 57 0.001765 95
+  scaleOrientation 0 1 0 0
+  scale 4 4 4
+  children [
+    DEF Airframe_0003 Transform {
+      scaleOrientation 1 0 0 0
+      rotation 0 1 0 0
+      children Inline {
+        url "asbQuadcopterBody.wrl" 
+      }
+    }
+    DEF Blade1_0003 Transform {
+      translation 0.0425 0.015 -0.0425
+      children Inline {
+        url "asbQuadcopterBladeCW.wrl" 
+      }
+    }
+    DEF Blade3_0003 Transform {
+      translation -0.0425 0.015 0.0425
+      children Inline {
+        url "asbQuadcopterBladeCW.wrl" 
+      }
+    }
+    DEF Blade2_0003 Transform {
+      translation -0.0425 0.015 -0.0425
+      children Inline {
+        url "asbQuadcopterBladeCCW.wrl" 
+      }
+    }
+    DEF Blade4_0003 Transform {
+      translation 0.0425 0.015 0.0425
+      children Inline {
+        url "asbQuadcopterBladeCCW.wrl" 
+      }
+    }
+    DEF Camera_0003 Viewpoint {
+      description "Quadcopter Camera"
+      position 0 -4 0
+      orientation 1 0 0 -1.57
+    }
+    DEF OnQuad_0003 Viewpoint {
+      description "Chase"
+      position -1 0.25 0
+      orientation 0 1 0 -1.57
+    }
+  ]
+}
